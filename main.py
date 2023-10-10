@@ -26,7 +26,9 @@ model_name = "BERTFakeNewsDetector"
 MODEL_CALLBACKS = [ModelCheckpoint(model_name, save_best_only=True)]
 
 
+
 fake_news_filepath = "/kaggle/input/fake-and-real-news-dataset/Fake.csv"
+
 real_news_filepath = "/kaggle/input/fake-and-real-news-dataset/True.csv"
 
 fake_df = pd.read_csv(fake_news_filepath)
